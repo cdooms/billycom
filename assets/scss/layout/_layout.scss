@@ -6,7 +6,11 @@
   @include span(15 of 15);
 
   &.page-header {
-    // background: $c-pink;
+    background: url("../img/layout/banner.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
 
   &.pink-bg {
@@ -15,5 +19,19 @@
 
   &.gray-bg {
     background: $c-gray;
+  }
+
+  .container {
+    padding: 2em;
+  }
+}
+
+.column-content {
+  text-align: center;
+}
+
+img {
+  &.circle {
+    @include circle(245px);
   }
 }
