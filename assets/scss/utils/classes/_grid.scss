@@ -11,9 +11,14 @@ $grids: (1, 2, 3, 4, 6);
   }
 }
 
-.latest {
-  @include last;
+@include breakpoint($b-tablet) {
+  .latest {
+    // @include last;
+    float: right !important;
+    margin-right: 0 !important;
+  }
 }
+
 
 .container {
  @include container;

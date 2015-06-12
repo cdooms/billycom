@@ -33,26 +33,21 @@
     }
   }
 
+  &.white-bg {
+    .container {
+      padding-top: 3em;
+    }
+  }
+
   .container {
     padding: 2em;
   }
 }
 
-.column {
-  margin: 2.5em 0;
-
   img {
     display: block;
     margin: 0 auto;
   }
-
-  &:last-child {
-    .column-content {
-      margin-bottom: 0;
-      padding-bottom: 0;
-    }
-  }
-}
 
 .column-content {
   text-align: center;
@@ -64,11 +59,6 @@ img {
   &.circle {
     @include circle(220px);
     // margin: 2em auto;
-  }
-
-  &.icon {
-    color: $c-black;
-
   }
 }
 
@@ -106,14 +96,6 @@ img {
 }
 
 @include breakpoint($b-tablet) {
-  .column {
-    margin: 1.5em 0 .5em;
-  }
-
-  .column-content {
-    margin-bottom: 0;
-  }
-
   .center-align {
     h1 {
       &.quote {

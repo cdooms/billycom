@@ -1,0 +1,23 @@
+.language {
+  @include span(15 of 15);
+  text-align: right;
+
+  .language-choice {
+    margin-bottom: 1em;
+
+    li {
+      display: inline;
+      margin-left: 10px;
+
+      a {
+        color: $c-white;
+        text-decoration: none;
+
+        &:hover,
+        &.active {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
