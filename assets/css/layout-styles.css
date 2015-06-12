@@ -1,3 +1,14 @@
-
+.row {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+.row.pink-bg {
+  background: #ed1652;
+}
+.row.gray-bg {
+  background: #f2f1f1;
+}
 
 /*# sourceMappingURL=layout-styles.css.map */

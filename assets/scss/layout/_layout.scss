@@ -2,3 +2,18 @@
 // LAYOUT.SCSS //
 // This file contains global page layout rules, layout rules that return on every page
 // ====================================================================================================== //
+.row {
+  @include span(15 of 15);
+
+  &.page-header {
+    // background: $c-pink;
+  }
+
+  &.pink-bg {
+    background: $c-pink;
+  }
+
+  &.gray-bg {
+    background: $c-gray;
+  }
+}
