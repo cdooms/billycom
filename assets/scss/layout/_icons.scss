@@ -19,6 +19,7 @@
   &:before {
     @include fontello-icon("\e804");
     font-size: 45px;
+    padding-bottom: 10px;
   }
 }
 

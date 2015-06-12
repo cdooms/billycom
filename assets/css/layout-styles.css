@@ -130,6 +130,7 @@
   text-rendering: auto;
   transform: translate(0, 0);
   font-size: 45px;
+  padding-bottom: 10px;
 }
 
 .design:before {
@@ -313,10 +314,10 @@ img.circle {
   margin-left: 20px;
 }
 .work-thumbnail h3 {
-  top: 65%;
+  bottom: 8%;
 }
 .work-thumbnail p {
-  top: 76%;
+  bottom: 6%;
   margin-bottom: 0;
 }
 .work-thumbnail .thumbnail {
@@ -358,12 +359,6 @@ img.circle {
   }
   .work-thumbnail:nth-child(4n+1) {
     margin-right: 0;
-  }
-  .work-thumbnail h3 {
-    top: 61%;
-  }
-  .work-thumbnail p {
-    top: 71%;
   }
 }
 
