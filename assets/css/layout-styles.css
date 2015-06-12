@@ -1,3 +1,18 @@
+@media (min-width: 768px) {
+  .columns-3 {
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%;
+    padding: 0 1.2em;
+  }
+
+  .columns-4 {
+    width: 23.72881%;
+    float: left;
+    margin-right: 1.69492%;
+    padding: 0 1.2em;
+  }
+}
 .header-logo {
   width: 120px;
   margin: 0 auto;
@@ -26,9 +41,87 @@
     margin: 3em 0 6em;
   }
   .header-content .header-quote {
+    font-size: 40px;
+    font-size: 2.5rem;
+    line-height: 61px;
+    line-height: 3.8125rem;
     margin-top: 0;
   }
 }
+.communicatie:before,
+.pr:before,
+.design:before,
+.social:before {
+  color: #404040;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+.communicatie:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  color: inherit;
+  content: "\e800";
+  line-height: 1;
+  speak: none;
+  display: inline-block;
+  font-family: Fontello;
+  text-rendering: auto;
+  transform: translate(0, 0);
+}
+
+.pr:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  color: inherit;
+  content: "\e804";
+  line-height: 1;
+  speak: none;
+  display: inline-block;
+  font-family: Fontello;
+  text-rendering: auto;
+  transform: translate(0, 0);
+  font-size: 45px;
+}
+
+.design:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  color: inherit;
+  content: "\e801";
+  line-height: 1;
+  speak: none;
+  display: inline-block;
+  font-family: Fontello;
+  text-rendering: auto;
+  transform: translate(0, 0);
+}
+
+.social:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  color: inherit;
+  content: "\e802";
+  line-height: 1;
+  speak: none;
+  display: inline-block;
+  font-family: Fontello;
+  text-rendering: auto;
+  transform: translate(0, 0);
+}
+
 .row {
   width: 100%;
   float: left;
@@ -48,20 +141,116 @@
 .row.gray-bg {
   background: #f2f1f1;
 }
+.row.quote {
+  background: url("../img/layout/quote.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.row.quote .container {
+  padding: 4em;
+}
 .row .container {
   padding: 2em;
 }
 
+.column {
+  margin: 2.5em 0;
+}
+.column img {
+  display: block;
+  margin: 0 auto;
+}
+.column:last-child .column-content {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
 .column-content {
   text-align: center;
+  margin: 2em 0 3em;
+  padding-bottom: 10px;
 }
 
 img.circle {
-  width: 245px;
-  height: 245px;
-  -moz-border-radius: 122.5px;
-  -webkit-border-radius: 122.5px;
-  border-radius: 122.5px;
+  width: 220px;
+  height: 220px;
+  -moz-border-radius: 110px;
+  -webkit-border-radius: 110px;
+  border-radius: 110px;
+}
+img.icon {
+  color: #404040;
+}
+
+.center-align {
+  text-align: center;
+  color: white;
+}
+.center-align h1 {
+  margin: .5em 0;
+}
+.center-align h1.quote {
+  font-weight: 700;
+  margin-top: 1.5em;
+}
+.center-align p {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 28px;
+  line-height: 1.75rem;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-weight: 400;
+  font-style: normal;
+  padding-top: 10px;
+}
+
+@media (min-width: 480px) {
+  img.circle {
+    width: 245px;
+    height: 245px;
+    -moz-border-radius: 122.5px;
+    -webkit-border-radius: 122.5px;
+    border-radius: 122.5px;
+  }
+
+  .center-align p {
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 35px;
+    line-height: 2.1875rem;
+  }
+}
+@media (min-width: 768px) {
+  .column {
+    margin: 1.5em 0 .5em;
+  }
+
+  .column-content {
+    margin-bottom: 0;
+  }
+
+  .center-align h1.quote {
+    padding: 0 1.5em;
+    margin-top: 2.5em;
+  }
+  .center-align p {
+    font-size: 22px;
+    font-size: 1.375rem;
+    line-height: 40px;
+    line-height: 2.5rem;
+    padding: 10px 0 20px;
+  }
+}
+@media (min-width: 960px) {
+  .center-align p {
+    font-size: 23px;
+    font-size: 1.4375rem;
+    line-height: 40px;
+    line-height: 2.5rem;
+  }
 }
 
 /*# sourceMappingURL=layout-styles.css.map */

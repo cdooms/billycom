@@ -10,3 +10,15 @@
   text-rendering: auto;
   transform: translate(0, 0);
 }
+
+@mixin fontello-icon ($code) {
+  @include fontsmoothing();
+  color: inherit;
+  content: $code;
+  line-height: 1;
+  speak: none;
+  display: inline-block;
+  font-family: Fontello;
+  text-rendering: auto;
+  transform: translate(0, 0);
+}

@@ -1,0 +1,35 @@
+.communicatie,
+.pr,
+.design,
+.social {
+  &:before {
+    color: $c-black;
+    font-size: 55px;
+    margin-bottom: 10px;
+  }
+}
+
+.communicatie {
+  &:before {
+    @include fontello-icon("\e800");
+  }
+}
+
+.pr {
+  &:before {
+    @include fontello-icon("\e804");
+    font-size: 45px;
+  }
+}
+
+.design {
+  &:before {
+    @include fontello-icon("\e801");
+  }
+}
+
+.social {
+  &:before {
+    @include fontello-icon("\e802");
+  }
+}

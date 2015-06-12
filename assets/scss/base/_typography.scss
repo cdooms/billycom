@@ -4,6 +4,8 @@
 // ====================================================================================================== //
 
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Slab:300,700);
+@include font-face("Fontello", font-files("fontello/billycom.woff", "fontello/billycom.ttf", "fontello/billycom.svg"), "fontello/billycom.eot");
+
 
 
 body {
@@ -13,10 +15,14 @@ body {
 h1 {
   @include typo($roboto-slab, 29, 40, $c-white, 300);
   margin: 0;
+
+  &.black {
+    color: $c-black;
+  }
 }
 
 h2 {
-  @include typo($roboto, 24, 33, $c-pink, 700);
+  @include typo($roboto, 22, 27, $c-pink, 700);
 }
 
 h3 {
@@ -33,6 +39,7 @@ h3 {
   }
 
   h2 {
+    @include font-size-line-height(24, 32);
   }
 
   h3 {

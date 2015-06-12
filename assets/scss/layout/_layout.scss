@@ -21,17 +21,118 @@
     background: $c-gray;
   }
 
+  &.quote {
+    background: url("../img/layout/quote.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    .container {
+      padding: 4em;
+    }
+  }
+
   .container {
     padding: 2em;
   }
 }
 
+.column {
+  margin: 2.5em 0;
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &:last-child {
+    .column-content {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+}
+
 .column-content {
   text-align: center;
+  margin: 2em 0 3em;
+  padding-bottom: 10px;
 }
 
 img {
   &.circle {
-    @include circle(245px);
+    @include circle(220px);
+    // margin: 2em auto;
+  }
+
+  &.icon {
+    color: $c-black;
+
+  }
+}
+
+.center-align {
+  text-align: center;
+  color: $c-white;
+
+  h1 {
+    margin: .5em 0;
+
+    &.quote {
+      font-weight: 700;
+      margin-top: 1.5em;
+    }
+  }
+
+  p {
+    @include typo($roboto, 16, 28, $c-white, 400);
+    padding-top: 10px;
+  }
+}
+
+@include breakpoint($b-mobile-landscape) {
+  img {
+    &.circle {
+      @include circle(245px);
+    }
+  }
+
+  .center-align {
+    p {
+      @include font-size-line-height(18, 35);
+    }
+  }
+}
+
+@include breakpoint($b-tablet) {
+  .column {
+    margin: 1.5em 0 .5em;
+  }
+
+  .column-content {
+    margin-bottom: 0;
+  }
+
+  .center-align {
+    h1 {
+      &.quote {
+        padding: 0 1.5em;
+        margin-top: 2.5em;
+      }
+    }
+
+    p {
+      @include font-size-line-height(22, 40);
+      padding: 10px 0 20px;
+    }
+  }
+}
+
+@include breakpoint($b-desktop) {
+  .center-align {
+    p {
+      @include font-size-line-height(23, 40);
+    }
   }
 }
