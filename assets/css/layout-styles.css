@@ -223,8 +223,8 @@
   padding: 2em;
 }
 
-img {
-  display: block;
+.header-logo img {
+  display: inline-block;
   margin: 0 auto;
 }
 
@@ -234,7 +234,11 @@ img {
   padding-bottom: 10px;
 }
 
-img.circle {
+.columns-3 img {
+  display: block;
+  margin: 0 auto;
+}
+.columns-3 img.circle {
   width: 220px;
   height: 220px;
   -moz-border-radius: 110px;
